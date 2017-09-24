@@ -15,7 +15,7 @@ definitions  = {
 movies  = {
   :The_Godfather => "1972",
   :Ip_Man => "2008",
-  :The_Ring => "2002"
+  :The_Ring => "2002",
   :Superbad => "2007"
 }
 
@@ -34,3 +34,8 @@ names_ages  = {
 #exercise 1
 
 print flip_coin
+print fav_colours[0]
+print ages.sort
+ages.push("0")
+print ages
+print movies[:The_Godfather]
