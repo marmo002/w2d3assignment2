@@ -20,9 +20,9 @@ movies  = {
 }
 
 world_cities  = {
-  :Toronto => "2,731,571",
-  :New_York => "8,175,133",
-  :Lima => "9,752,000"
+  :Toronto => 2731571,
+  :New_York => 8175133,
+  :Lima => 9752000
 }
 
 names_ages  = {
@@ -43,7 +43,7 @@ puts movies[:The_Godfather]
 
 #exercise 2
 puts fav_colours[-1]
-world_cities[:Bogota] = "3,893,127"
+world_cities[:Bogota] = 3893127
 puts world_cities
 flip_coin.reverse!
 puts flip_coin
@@ -85,4 +85,32 @@ end
 
 puts "I flip heads #{flip_coin.count("true")} times"
 
-puts "New york city now has #{names_ages[:New_York] = "12,000"} people"
+performing_artists.delete("Denzel Washington")
+puts performing_artists
+
+puts "New york city now has #{world_cities[:New_York] = 12000} people"
+puts world_cities
+
+#exercise 5
+puts "Popultion in cities = #{total_population = world_cities.values.sum}"
+
+names_ages.each do |name, age|
+  if age < "30"
+    puts "#{name} is a young person"
+  else
+    puts "#{name} is an old person"
+  end
+end
+
+puts "My las two colours: #{fav_colours[-2..-1]}"
+
+ages.each do |age|
+  age = age.to_i
+  age += 1
+  age.to_s
+  puts "- #{age}"
+end
+
+fav_colours << ["purple", "green"]
+fav_colours.flatten!
+print fav_colours
