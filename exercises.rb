@@ -39,3 +39,15 @@ print ages.sort
 ages.push("0")
 print ages
 print movies[:The_Godfather]
+
+#exercise 1
+print fav_colours[-1]
+world_cities[:Bogota] = "3,893,127"
+print world_cities
+flip_coin.reverse!
+print flip_coin
+print world_cities[:Lima]
+
+performing_artists.each do |artist|
+  puts "#{artist} is the greatest ever!!"
+end
