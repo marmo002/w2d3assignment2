@@ -179,3 +179,31 @@ def add_expenses(expenses)
 end
 p add_expenses(expenses)
 p add_expenses(expenses_2)
+
+#exercise 8
+groceries = ["carrots", "toilet paper", "apples", "salmon"]
+groceries << "rice"
+# groceries << "bananas"
+
+def groceries_list(list)
+  list.each do |item|
+    puts "* #{item}"
+  end
+end
+groceries_list(groceries)
+
+puts number_of_groceries = groceries.count
+
+if groceries.include?("bananas")
+puts "You don't need to pick up bananas today"
+else
+  puts "You need to pick up bananas"
+end
+
+puts "The first two itmes in my list: #{groceries[0..1]}"
+
+groceries = groceries.sort
+groceries_list(groceries)
+
+puts "Deleting salmon...#{groceries.delete("salmon")}"
+groceries_list(groceries)
