@@ -10,3 +10,18 @@ def students_cohort(students)
   end
 end
 students_cohort(students)
+
+students[:cohort4] = 43
+
+def keys(students)
+  students.keys
+end
+puts keys(students)
+
+def increase_by_five(students)
+  students.each do |key, value|
+    students[key] = value*1.05
+  end
+end
+
+puts increase_by_five(students)
