@@ -114,3 +114,54 @@ end
 fav_colours << ["purple", "green"]
 fav_colours.flatten!
 print fav_colours
+
+#exercise 6
+movies_year_list = {
+  1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+}
+
+phone_keypad = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  ["*", 0, '#']
+]
+
+three_countries_information = [
+  {:canada => {name: "Canada", continent: "North America", is_island: "no"}},
+  {:usa => {name: "USA", continent: "North America", is_island: "yes"}},
+  {:peru => { name: "Peru", continent: "South America", is_island: "no"}}
+]
+
+message = "I will not skateboard in the halls"
+20.times { puts message }
+
+p messages_ary = Array.new(20, message)
+
+p one_to_fifty = (1..50).to_a
+sum = 0
+one_to_fifty.each do |a|
+  sum += a
+end
+p sum
+
+three_of_each = []
+one_to_fifty.each do |value|
+  three_of_each << value
+  three_of_each << value
+  three_of_each << value
+end
+p three_of_each
+
+# puts three_countries_information
+no_island = []
+three_countries_information.each do |countries|
+  countries.select do |key, value|
+    if value[:is_island] == "no"
+      no_island << key
+    end
+  end
+end
+puts no_island
