@@ -165,3 +165,17 @@ three_countries_information.each do |countries|
   end
 end
 puts no_island
+
+#exercise 7
+expenses = [130, 189.59, 50.36, 45, 120.32]
+expenses_2 = [500, 12.36, 70.6, 145, 50.1]
+
+def add_expenses(expenses)
+  sum_total = 0
+  expenses.each do |expense|
+    sum_total += expense
+  end
+  expenses << sum_total.round(2)
+end
+p add_expenses(expenses)
+p add_expenses(expenses_2)
