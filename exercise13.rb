@@ -17,9 +17,18 @@ def call_absent_dogs(bad_dogs)
   bad_dogs.each do |each_dog|
     list << each_dog[:name]
   end
-  return list
+  return list.each { |name| puts "Come back, #{name}!!"}
 end
 
-call_dogs = call_absent_dogs(bad_dogs)
+call_absent_dogs(bad_dogs)
 
-call_dogs.each { |name| puts "Come back, #{name}!!"}
+neighbors_dogs = [
+  { :name => 'Rodolfo', :position => 3 },
+  { :name => 'Alex', :position => 12 },
+  { :name => 'Juaneco', :position => 15 }
+]
+
+neighbors_bad_dogs = get_absent_dogs(neighbors_dogs)
+p neighbors_bad_dogs
+
+call_absent_dogs(neighbors_bad_dogs)
